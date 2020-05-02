@@ -1,0 +1,250 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ body{
+    Margin-top:0;
+    background-color:lightblue;
+ }
+ .create_comment_label
+ {
+  text-align: left;
+ }
+ .create_comment 
+ {
+   text-align: left;
+ }
+ .create_comment textarea
+ {
+   width: 300px;
+   height: 75px;
+ }
+
+ .user_email
+ {
+   text-align: right;
+   margin-left: 600px;
+   width: 100%;
+ }
+ .head {
+    background:lightblue;
+    margin: 0;
+    padding: 0;
+  }
+.main {
+    background:rgb(244, 246, 247);
+    margin: 0;
+    padding: 0;
+  }
+  /* Navigation */
+
+h2{
+    color:rgb(21, 179, 179);
+    text-align: left;
+}
+
+  
+ul {
+    padding: 0;
+    margin: 0;
+  }
+li {
+    color: #FFF;
+    display: inline-block;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 20px 18px 10px 18px;
+    text-transform: uppercase;
+  }
+  
+
+  
+table {
+    
+    
+    margin: 0 ;
+    overflow-y: scroll;
+    position: static;
+    width: 75%;
+  }
+.main_app
+{
+  width: 100%;
+  height: 100%;
+}
+.log_in , .sign_up {
+  text-align: center;
+}
+thead th {
+    background: #88CCF1;
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  input{
+    border: 0px;
+    background: #f4f7f8;
+    width: 100%;
+    height: 100%;
+  }
+ h3{
+    color:rgb(21, 179, 179);
+    text-align: left;
+ }
+  .title_input input
+  {
+      text-align: left;
+      margin-left: 0;
+      width: 20%;
+      height: 20%;
+      background: white;
+  }
+  .body_input textarea
+  {
+    width: 40%;
+    height: 250px;
+  }
+  .select input
+  {
+    width: 20%;
+    height: 20%;
+  }
+  .body_input
+  {
+    
+    height: 100%;
+  }
+  .post_data , .comment_form
+  {
+      margin-left: 2%;
+
+  }
+  .comments
+  {
+    margin-left: 2%;
+  }
+  .field_log_in input
+  {
+    width: 20%;
+    height: 20%;
+  }
+  .actions_log_in input{
+    text-align: center;
+    width: 20%;
+    height: 20%;
+    text-align: left;
+      margin-left: 0;
+      width: 20%;
+      height: 20%;
+      background: rgb(155, 187, 197);
+      margin-top: 2%;
+      margin-bottom: 5%;
+      border: 4px double black;
+      border-color: teal;
+  }
+  .field_sign_up input
+  {
+    width: 20%;
+    height: 20%;
+  }
+  .actions input
+  {
+      text-align: left;
+      margin-left: 0;
+      width: 20%;
+      height: 20%;
+      background: rgb(155, 187, 197);
+      margin-top: 5%;
+      margin-bottom: 5%;
+      border: 4px double black;
+      border-color: teal;
+  }
+  label{
+    text-align: center;
+  }
+  tr {
+    background: #f4f7f8;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 1px;
+  }
+  img{
+    text-align: center;
+  }
+th, td {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 2px;
+    text-align: left;
+    width: 12%;
+  }
+  
+
+  form {
+    text-align: center;
+       
+  }
+  .main_form
+  {
+    background:lightblue;
+  } 
+  .main_form textarea, .main_form input
+  {
+    border: 1px solid rgb(22, 95, 116);
+    background-color: rgb(202, 226, 226);
+  }
+ .main_form .actions input
+ {
+   text-align: center;
+ }
+  h1 {
+    color:rgb(21, 179, 179);
+    text-align: center;
+    padding-top: 1.5%;
+  }
+  .main_app
+  {
+    width: 100%;
+    height: 100%;
+    background:lightblue;
+  }
+  
+  .post , .email ,.category
+  {
+    background-color: rgb(223, 230, 235);
+    width: 15%;
+    border: 1px solid rgb(22, 95, 116);
+    height: 25%;
+    text-align: center;
+    
+  }
+  .body
+  {
+    background-color: rgb(223, 230, 235);
+    width: 35%;
+    border: 1px solid rgb(22, 95, 116);
+    height: 150px;
+    text-align: left;
+  }
+  strong
+  {
+    color: teal;
+  }
+  

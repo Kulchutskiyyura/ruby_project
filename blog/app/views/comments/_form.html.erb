@@ -1,0 +1,25 @@
+<%= form_with(model: [ @post, @post.comments.build ], local: true) do |form| %>
+  <p>
+    <%  if ( current_user ) %>
+     <%= form.hidden_field :user_email , :value =>  current_user.email%>
+    <%end%>
+  </p>
+  <div class="comment_form">
+  <p class="create_comment">
+    <strong class="create_comment_label" >Body</strong>
+    <br>
+    <%= form.text_area :body %>
+  </p>
+
+  <div class="select">
+  
+  <p class="create_comment">
+    <%= form.submit %>
+  </p>
+
+  </div>
+
+
+  </div>
+  </div>
+<% end %>

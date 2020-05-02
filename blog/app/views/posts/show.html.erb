@@ -1,0 +1,52 @@
+<h2>Post</h2>
+<div class="show">
+<p id="notice"><%= notice %></p>
+<div class="post_data">
+<strong>Title</strong>
+<div class="post">
+<p>
+    <%= @post.title %>
+</p>
+</div>
+<strong>Emai:</strong>
+<div class="email">
+<p>
+  
+  <%= @post.user.email %>
+</p>
+</div>
+<strong>Category:</strong>
+<div class="category">
+<p>
+  
+  <%= @post.category_list %>
+</p>
+</div>
+<strong>Body:</strong>
+<div class="body">
+
+<p>
+  
+  <%= @post.body %>
+</p>
+</div>
+
+</div>
+<h2>Comments</h2>
+<div class="comments">
+<% if @post.comments.none?  %>
+<p> No comments yet</p>
+<% else %>
+
+<%= render @post.comments %>
+<% end %>
+</div>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
+<% if current_user && current_user.email==  @post.user.email%>
+<h2><%= link_to 'Edit', edit_post_path(@post) %> |
+<% end %>
+<h2><%= link_to 'Back', posts_path %></h2>
+</div>
