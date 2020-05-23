@@ -10,13 +10,10 @@
 <% end %>
 <br>
 <li>
-  <% @posts.each do |p| %>
+  <% @all_post.each do |t| %>
     
-   <% p.category_list.each do |t| %>
     <%= link_to t, tagged_path(category: t) %>
-  <% end %>
-
-<% end %>
+ <% end %>
 </li>
 </div>
 <div class="main">

@@ -5,6 +5,11 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+    @all_post=[]
+      Post.all.each  do |post|
+        @all_post.append(post.category_list)
+      end
+    @all_post=@all_post.uniq
   end
 
   # GET /posts/1
@@ -64,10 +69,21 @@ class PostsController < ApplicationController
   def tagged
     if params[:category].present?
       @posts = Post.tagged_with(params[:category])
-      @all_post=Post.all - Post.tagged_with(params[:category])
+      zmin=Post.all - Post.tagged_with(params[:category])
+      @all_post=[]
+      zmin.each  do |post|
+        @all_post.append(post.category_list)
+      end
+      @all_post=@all_post.uniq
     else
       @posts = Post.all
-      @all_post=Post.all
+      @all_post=[]
+      Post.all.each  do |post|
+        @all_post.append(post.category_list)
+      end
+      @all_post=@all_post.uniq
+      puts @all_post
+     #append
     end
   end
   private
@@ -78,6 +94,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:title, :body,:category_list)
+      params.require(:post).permit(:title, :body,:category_list,:image)
     end
 end

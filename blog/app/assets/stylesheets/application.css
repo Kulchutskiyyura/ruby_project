@@ -17,10 +17,12 @@
     Margin-top:0;
     background-color:lightblue;
  }
+ 
  .create_comment_label
  {
   text-align: left;
  }
+ 
  .create_comment 
  {
    text-align: left;
@@ -158,6 +160,7 @@ thead th {
       margin-bottom: 5%;
       border: 4px double black;
       border-color: teal;
+      text-align: center;
   }
   .field_sign_up input
   {
@@ -175,6 +178,7 @@ thead th {
       margin-bottom: 5%;
       border: 4px double black;
       border-color: teal;
+      text-align: center;
   }
   label{
     text-align: center;

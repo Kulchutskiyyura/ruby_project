@@ -22,13 +22,23 @@
   <%= @post.category_list %>
 </p>
 </div>
+<strong>Image:</strong>
+<div>
+  <% if @post.image.url(:medium) !="/images/medium/missing.png" %>
+  
+  <%= image_tag @post.image.url(:medium) %>
+  
+  <% else %>
+  <p> no image </p>
+  <%end%>
+</div>
 <strong>Body:</strong>
-<div class="body">
+<div >
 
-<p>
+<textarea disabled rows="10" cols="45">
   
   <%= @post.body %>
-</p>
+ </textarea>
 </div>
 
 </div>

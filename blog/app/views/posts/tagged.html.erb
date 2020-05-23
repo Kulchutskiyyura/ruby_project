@@ -9,14 +9,10 @@
 <% end %>
 <br>
 <li>
-<% @all_post.each do |p| %>
-    
-   <% p.category_list.each do |t| %>
+<% @all_post.each do |t| %>
+     
     <%= link_to t, tagged_path(category: t) %>
-  <% end %>
-
-
-<% end %>
+ <% end %>
 <%= link_to 'Main', posts_path %>
 </li>
 </div>
@@ -40,7 +36,10 @@
    <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
-        <td><%= post.body %></td>
+        <%if (post.body.length>15)%>
+        <td><%= post.body[0..15]+"..."%> </td>
+        <%end%>
+        
         <td><%= post.user.email %></td>
         <td><%= link_to 'Show', post %></td>
         
